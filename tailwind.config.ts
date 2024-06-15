@@ -20,8 +20,8 @@ const config: Config = {
             secondary: "#00000030",
           },
           label: {
-            DEFAULT: "#FF3333",
-            text: "#FF333310",
+            DEFAULT: "#FF333310",
+            text: "#FF3333",
           },
           chip: {
             bg: {
@@ -43,8 +43,21 @@ const config: Config = {
         DEFAULT: "#00000010",
       },
       fontSize: {
-        featured: [
-          "var(--featured-font-size)",
+        primary: [
+          "var(--primary-font-size)",
+          {
+            fontWeight: "700",
+            lineHeight: "1",
+          },
+        ],
+        secondary: [
+          "var(--secondary-font-size)",
+          {
+            fontWeight: "700",
+          },
+        ],
+        tertiary: [
+          "var(--tertiary-font-size)",
           {
             fontWeight: "700",
           },
