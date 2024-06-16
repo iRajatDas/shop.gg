@@ -1,30 +1,10 @@
 import Image from "next/image";
 import { Suspense } from "react";
 
-export default async function Home() {
-  // get user country
-  // wait 4 seconds
-  // await new Promise((resolve) => setTimeout(resolve, 4000));
-  const res = await fetch(
-    "https://production.userdata.cdn-threads.workers.dev/"
-    // "https://production.userdata.cdn-threads.workers.dev/"
-  );
-
-  const data = await res.json();
-  console.log(data);
-
+export default function Home() {
   return (
     <main className="min-h-dvh">
-      <h1 className="text-primary">
-        FIND CLOTHES THAT MATCHES YOUR STYLE{" "}
-        <Suspense
-          fallback={
-            <span className="text-primary">Loading your country...</span>
-          }
-        >
-          {data.geo.country}
-        </Suspense>
-      </h1>
+      <h1 className="text-primary">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
       <h2 className="text-secondary">One Life Graphic T-/shirt</h2>
       <h3 className="text-tertiary">NEW ARRIVALS</h3>
 
