@@ -16,7 +16,7 @@ export default function Downloader() {
 
     try {
       const response = await axios({
-        url: "http://192.168.1.g3:5000/download",
+        url: "http://192.168.1.3:5000/download",
         method: "POST",
         responseType: "blob", // Important for downloading binary data
         data: {
