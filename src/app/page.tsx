@@ -16,7 +16,7 @@ export default function Downloader() {
 
     try {
       const response = await axios({
-        url: "https://api.rapidyt.com/download",
+        url: "http://localhost:5000/download",
         method: "POST",
         responseType: "blob", // Important for downloading binary data
         data: {
