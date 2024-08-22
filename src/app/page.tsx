@@ -4,7 +4,7 @@ import axios from "axios";
 
 export default function Downloader() {
   const [url, setUrl] = useState("");
-  const [quality, setQuality] = useState("360p");
+  const [quality, setQuality] = useState("720p");
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState<null | string>(null);
